@@ -67,7 +67,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['Home', 'About', 'Events', 'Domainsp','Gallery', 'Contact'],
-				// sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+				// sectionsColor: ['#310de300', '#939FAA', '#323539'],
 				menu:'#qmenu',
 				scrollOverflow: true,
 				navigation: true,
@@ -81,7 +81,7 @@
 
 
 		  body {
-    background: #2f1a9713 url("images/bg5.jpg") no-repeat top center fixed;
+    background: #000000ed url("images/bg7.jpg") no-repeat top center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -698,6 +698,7 @@ color: rgb(211, 244, 244);
 	    });
 		});
 	</script>
+	<div id="particles-js"></div>
 <header class="hh-header header-top  w3-padding-64">
   	<div class="">
 	   <a class="menu-icon">
@@ -711,7 +712,7 @@ color: rgb(211, 244, 244);
 	</div>
    <div class="menu-bar">
 		<div class="menu-bar-item">
-			<button class="menu-bar-btn">&larr;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</button></a>
+			<button class="menu-bar-btn">&larr;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
 				<!-- no menu-bar-dropdown  -->
 		</div>
 
@@ -720,7 +721,7 @@ color: rgb(211, 244, 244);
 			</div> -->
 	</div>
 </header>
-	<div id="particles-js"></div>
+	
 	<nav class="page-menu">
 		<div class="menu-wrapper w3-center">
 			<ul id="qmenu" class="menu-list qmenu">
@@ -768,6 +769,7 @@ color: rgb(211, 244, 244);
 	<!-- END OF menu button page navigation -->
 
 <div id="fullpage">
+	
 
 	<div class="section " id="home">
 		<section class=" w3-display-container">
@@ -776,18 +778,18 @@ color: rgb(211, 244, 244);
 				<span class="w3-hide-large"><br><br><br></span>
 
 
-			<!--	<div class="strides"><center>
-			 	 <img src="images/studs.png" height="300" width="300" class="w3-image"alt="strides_logo"></center>
-			 </div> -->
+				
 
 
 
 <div class="container">
 	<div class="row">
-	<svg viewBox="0 150 1800 800">   <!-- here make 500 to 280 for larger one-->
+	<svg viewBox="0 0 1500 350">   <!-- here make 500 to 280 for larger one-->
     <symbol id="s-text">
 		<text style="font-weight: bolder;" text-anchor="middle" x="50%" y="50%">  Navakriti-2k23  </text>
 	</symbol>
+
+	
 
 	<g class = "g-ants">
 		<use xlink:href="#s-text" class="text-copy"></use>
@@ -800,6 +802,7 @@ color: rgb(211, 244, 244);
 	</g>
 
 </svg>
+
 </div>
 
 		        <div class="c-clock clock clock-countdown countdown w3-center" style="margin-top: -50px" >
@@ -1233,32 +1236,32 @@ color: rgb(211, 244, 244);
 </script>
 <script class="source" type="text/javascript">
         $('.countdown').downCount({
-            date: '02/05/2023 09:30:00',
+            date: '02/07/2023 09:30:00',
             offset: +10
         }, function () {
             alert('The Wait is Over!!');
         });
 </script>
 <script>
-	/* ---- particles.js config ---- */
-	particlesJS("particles-js", {
-  "particles": {
+/* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+	"particles": {
     "number": {
-      "value": 350,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area":1000
+        "value_area": 800
       }
     },
     "color": {
-      "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
+      "value": "#ffffff"
     },
-
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#fff"
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
@@ -1270,7 +1273,7 @@ color: rgb(211, 244, 244);
       }
     },
     "opacity": {
-      "value": 0.6,
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
@@ -1280,7 +1283,7 @@ color: rgb(211, 244, 244);
       }
     },
     "size": {
-      "value": 2,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -1290,28 +1293,43 @@ color: rgb(211, 244, 244);
       }
     },
     "line_linked": {
-      "enable": false,
-      "distance": 190,
+      "enable": true,
+      "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
   },
   "interactivity": {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable":false,
-        "mode": "grab"
+        "enable": true,
+        "mode": "repulse"
       },
       "onclick": {
-        "enable": false
+        "enable": true,
+        "mode": "push"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 140,
+        "distance": 400,
         "line_linked": {
           "opacity": 1
         }
@@ -1324,7 +1342,7 @@ color: rgb(211, 244, 244);
         "speed": 3
       },
       "repulse": {
-        "distance": 500,
+        "distance": 200,
         "duration": 0.4
       },
       "push": {
@@ -1335,8 +1353,29 @@ color: rgb(211, 244, 244);
       }
     }
   },
-  "retina_detect":false
-   });
+  "retina_detect": true
+});
+
+
+/* ---- stats.js config ---- */
+
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+  stats.begin();
+  stats.end();
+  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+  }
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
 </script>
 <script>
 
